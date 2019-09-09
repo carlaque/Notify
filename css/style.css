@@ -1,3 +1,6 @@
+aside{
+    grid-area: aside;
+}
 body{
     height: 100vh;
     margin: 0;
@@ -11,25 +14,43 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh;
+    grid-template-rows: 2vh 30vh 150vh 20vh 30vh 10vh;
                         
 }
-nav{
-    background-color: #2dcc73;
-    grid-area: nav;
+footer{
+    grid-area: footer;
 }
 header{
     grid-area: header;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-area: main;
+}
+main h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22pt;
+    text-align: center;
+}
+main img{
+    background-color: #2dcc73;
+    border-radius: 100%;
+    margin-top: 30px;
+    padding: 15px;
+}
+main p{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin: 0 40px;
+    text-align: justify;
+}
+nav{
+    background-color: #2dcc73;
+    grid-area: nav;
 }
 section{
     grid-area: section;
-}
-aside{
-    grid-area: aside;
-}
-footer{
-    grid-area: footer;
 }
