@@ -13,8 +13,7 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */
-    
+    /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */                        
 }
 footer{
     grid-area: footer;
@@ -25,7 +24,6 @@ header{
     color: white;
     height: 60vh;
     grid-area: header;
-
 }
 header h1{
     font-family: 'Pacifico', cursive; 
@@ -55,7 +53,28 @@ header div p:hover{
     background-color: rgba(63, 201, 63, 0.555);
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-area: main;
+}
+main h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22pt;
+    text-align: center;
+}
+main img{
+    background-color: #2dcc73;
+    border-radius: 100%;
+    margin-top: 30px;
+    padding: 15px;
+}
+main p{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin: 0 40px;
+    text-align: justify;
 }
 nav{
     background-color: #2dcc73;
