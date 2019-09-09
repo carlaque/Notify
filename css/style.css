@@ -35,6 +35,8 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
+    grid-template-rows: 2vh 70vh 150vh 80vh 30vh 10vh;
+                        
     /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */                        
 }
 footer{
@@ -103,5 +105,26 @@ nav{
     grid-area: nav;
 }
 section{
+    align-items: center;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
     grid-area: section;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+section h1{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+}
+section iframe{
+    border-radius: 5%;
+    width: 80%;
+}
+section p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin: 0 40px;
+    text-align: justify;
 }
