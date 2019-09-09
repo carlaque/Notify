@@ -1,5 +1,27 @@
 aside{
     grid-area: aside;
+    background-color: white;
+}
+aside p {
+    margin:7vh;
+    font-size:14pt;
+}
+aside h2{
+    text-align: center;
+}
+aside ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10vw 10vw;
+    align-items: center;
+}
+aside ul li{
+    list-style: none;
+}
+aside ul li img{
+    width: 70px;
+    margin: 1px 1px -1px;
 }
 body{
     margin: 0;
