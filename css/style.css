@@ -2,7 +2,6 @@ aside{
     grid-area: aside;
 }
 body{
-    height: 100vh;
     margin: 0;
 }
 .container{
@@ -14,14 +13,46 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 30vh 150vh 80vh 30vh 10vh;
+    grid-template-rows: 2vh 50vh 150vh 80vh 30vh 10vh;
                         
+    /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */                        
 }
 footer{
     grid-area: footer;
 }
 header{
+    background-image: url("../images/banner.png");
+    background-position: center;
+    color: white;
+    height: 60vh;
     grid-area: header;
+}
+header h1{
+    font-family: 'Pacifico', cursive; 
+    font-size: 35pt ;
+    text-align: center;
+}
+header p{ 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14pt;
+    text-align: left;
+    padding-left: 13px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    margin-left: 10vw;
+}
+header div p{
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 100%;
+    padding: 15px;
+}
+header div p:hover{
+    background-color: rgba(63, 201, 63, 0.555);
 }
 main{
     display: flex;
@@ -62,8 +93,16 @@ section{
 }
 section h1{
     font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
 }
 section iframe{
     border-radius: 5%;
     width: 80%;
+}
+section p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    margin: 0 40px;
+    text-align: justify;
 }
