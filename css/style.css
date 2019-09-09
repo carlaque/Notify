@@ -13,7 +13,7 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 50vh 150vh 80vh 30vh 10vh;
+    grid-template-rows: 2vh 70vh 150vh 80vh 30vh 10vh;
                         
     /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */                        
 }
