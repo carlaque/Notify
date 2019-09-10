@@ -35,9 +35,7 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 70vh 150vh 80vh 30vh 10vh;
-                        
-    /* grid-template-rows: 2vh 30vh 20vh 20vh 30vh 10vh; */                        
+    grid-template-rows: 2vh 60vh 150vh 90vh 110vh 10vh;                      
 }
 footer{
     grid-area: footer;
@@ -60,7 +58,6 @@ header p{
     text-align: left;
     padding-left: 13px;
 }
-
 header div{
     display: flex;
     align-items: center;
@@ -122,7 +119,14 @@ section iframe{
     border-radius: 5%;
     width: 80%;
 }
+section input{
+    border-radius: 8px;
+    height: 40px;
+    margin-top: 30px;
+    width: 75vw;
+}
 section p{
+    color: #a7a7a7;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
     margin: 0 40px;
