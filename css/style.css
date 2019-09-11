@@ -35,35 +35,37 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 60vh 150vh 90vh 110vh 10vh;                      
+    grid-template-rows: 2vh 80vh 150vh 90vh 110vh 10vh;                      
 }
 footer{
     grid-area: footer;
 }
 header{
-    background-image: url("../images/banner.png");
-    background-position: center;
+    background-image: url("../images/banner2.png");
+    background-size: cover;
     color: white;
-    height: 60vh;
     grid-area: header;
 }
 header h1{
     font-family: 'Pacifico', cursive; 
     font-size: 35pt ;
+    margin-right: 45vw;
+    margin-top: 15vh;
     text-align: center;
 }
 header p{ 
     font-family: 'Roboto', sans-serif; 
     font-size: 14pt;
     text-align: left;
-    padding-left: 13px;
+    padding: 0 33px;
 }
 header div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 200px;
     margin-left: 10vw;
+    margin-top: 10vh;
+    width: 200px;
 }
 header div p{
     background-color: rgba(0, 0, 0, 0.671);
@@ -131,4 +133,7 @@ section p{
     font-size: 16pt;
     margin: 0 40px;
     text-align: justify;
+}
+div span{
+    color: #2dcc73;
 }
