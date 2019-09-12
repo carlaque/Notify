@@ -35,7 +35,7 @@ body{
                             "aside"
                             "footer";
     grid-template-columns: 100vw;
-    grid-template-rows: 2vh 80vh 150vh 90vh 110vh 10vh;                      
+    /* grid-template-rows: 2vh 80vh 170vh 100vh 110vh 10vh;                       */
 }
 footer{
     grid-area: footer;
@@ -63,8 +63,7 @@ header div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 10vw;
-    margin-top: 10vh;
+    margin: 10vh 0 10vh 10vw;
     width: 200px;
 }
 header div p{
@@ -83,20 +82,20 @@ main{
 }
 main h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 22pt;
+    font-size: 18pt;
     text-align: center;
 }
 main img{
     background-color: #2dcc73;
     border-radius: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 15px;
 }
 main p{
     color: gray;
     font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    margin: 0 40px;
+    font-size: 14pt;
+    margin: 0 50px;
     text-align: justify;
 }
 nav{
@@ -112,27 +111,50 @@ section{
     margin-top: 20px;
     padding-top: 40px;
 }
+section div{
+    display: flex;
+    margin: 0 0 8vh 0;
+}
 section h1{
     font-family: 'Roboto', sans-serif;
-    margin: 20px 0 0 0;
+    font-size: 18pt;
+    margin: 20px 32px 0 32px;
     padding: 20px 0;
+    text-align: justify;
 }
 section iframe{
     border-radius: 5%;
+    height: 30vh;
     width: 80%;
 }
 section input{
-    border-radius: 8px;
+    border: none;
+    border-radius: 8px 0 0 8px;
     height: 40px;
     margin-top: 30px;
-    width: 75vw;
+    width: 55vw;
+}
+section input[type="button"]{
+    background-color: #2dcc73;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 40px;
+    width: 20vw;
 }
 section p{
     color: #a7a7a7;
     font-family: 'Roboto', sans-serif;
-    font-size: 16pt;
-    margin: 0 40px;
+    font-size: 14pt;
+    margin: 0 50px;
     text-align: justify;
+}
+main :nth-child(9){
+    margin-bottom: 5vh;
 }
 div span{
     color: #2dcc73;
