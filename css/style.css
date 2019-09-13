@@ -177,7 +177,7 @@ main p{
 }
 nav{
     background-color: #2dcc73;
-    height: 2vh ;
+    height: 1vh ;
     grid-area: nav;
 }
 section{
@@ -317,7 +317,7 @@ section div p{
         margin-bottom: 
     }
     header > div > p{
-        margin: 0 5vw 0 20vw;
+        margin: 0 10vw 0 20vw;
     }
     header > div > div{
         margin-left: 19.5vw;
