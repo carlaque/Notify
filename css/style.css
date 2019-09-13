@@ -3,11 +3,9 @@ aside{
     font-family: 'Roboto', sans-serif;
     grid-area: aside;
 }
-aside p {
-    color: #a7a7a7;
-    font-size:12pt;
-    margin: 40px 50px 0 50px;
-    text-align: justify;
+aside h1{
+    margin-top: 50px;
+    text-align: center;
 }
 aside h2{
     font-family: 'Roboto', sans-serif; 
@@ -20,10 +18,6 @@ aside h3{
     font-family: 'Roboto', sans-serif; 
     font-size: 12pt;
     margin: 30px 50px 30px 50px;
-    text-align: center;
-}
-aside h1{
-    margin-top: 50px;
     text-align: center;
 }
 aside > div{
@@ -51,6 +45,12 @@ aside > div > p > img{
 aside > div > p > img:hover{
     background-color: #2dcc73;
 }
+aside p {
+    color: #a7a7a7;
+    font-size:12pt;
+    margin: 40px 50px 0 50px;
+    text-align: justify;
+}
 aside ul{
     align-items: center;
     display: flex;
@@ -72,13 +72,14 @@ body{
 .container{
     display: grid;
     grid-template-areas:    "nav"
-                            "header"
-                            "main"
-                            "section"
-                            "aside"
-                            "footer";
+    "header"
+    "main"
+    "section"
+    "aside"
+    "footer";
     grid-template-columns: 100vw;
     /* grid-template-rows: 2vh 80vh 170vh 100vh 110vh 10vh;                       */
+}                                                           div span{                                                       color: #2dcc73;
 }
 footer{
     align-items: center;
@@ -106,12 +107,6 @@ header div:nth-child(1){
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-header h1{
-    font-family: 'Pacifico', cursive; 
-    font-size: 35pt ;
-    margin: 15vh 45vw 10vh 10vw;
-    text-align: center;
 }
 header > div > p{ 
     font-family: 'Roboto', sans-serif; 
@@ -141,6 +136,12 @@ header > div > div > p{
 header > div > div > p:hover{
     background-color: rgba(63, 201, 63, 0.555);
 }
+header h1{
+    font-family: 'Pacifico', cursive; 
+    font-size: 35pt ;
+    margin: 15vh 45vw 10vh 10vw;
+    text-align: center;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -164,6 +165,9 @@ main img{
     margin-top: 50px;
     padding: 15px;
 }
+main div:nth-child(3):nth-child(3){
+    margin-bottom: 5vh;
+}
 main p{
     color: gray;
     font-family: 'Roboto', sans-serif;
@@ -185,30 +189,41 @@ section{
     margin-top: 20px;
     padding-top: 40px;
 }
-section div{
+section div:first-child{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+section div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section div div{
     display: flex;
     margin: 0 0 8vh 0;
 }
-section h1{
+section div h1{
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
     margin: 20px 32px 0 32px;
     padding: 20px 0;
     text-align: justify;
 }
-section iframe{
+section div img{
     border-radius: 5%;
-    height: 30vh;
+    height: 27vh;
     width: 80%;
 }
-section input{
+section div input{
     border: none;
     border-radius: 8px 0 0 8px;
     height: 40px;
     margin-top: 30px;
     width: 55vw;
 }
-section input[type="button"]{
+section div input[type="button"]{
     background-color: #2dcc73;
     border-radius: 0 8px 8px 0;
     box-shadow: 0;
@@ -220,18 +235,12 @@ section input[type="button"]{
     height: 40px;
     width: 20vw;
 }
-section p{
+section div p{
     color: #a7a7a7;
     font-family: 'Roboto', sans-serif;
     font-size: 14pt;
-    margin: 0 50px;
+    margin: 0 5vw;
     text-align: justify;
-}
-main :nth-child(9){
-    margin-bottom: 5vh;
-}
-div span{
-    color: #2dcc73;
 }
 @media(min-width: 768px){
     .container{
@@ -253,18 +262,16 @@ div span{
     header{
         /* justify-content: flex-start; */
     }
-    header > div > img{
-        display: block;
-    }
-    header > div > h1{
-        margin: 15vw 25vw 10vh 10vw;
-    }
-    header > div > p{
-        margin: 0 10vw;
-        padding: 0;
-    }
     header > div > div {
         margin-top: 0;
+        margin-bottom: 20vh;
+    }
+    header > div > h1{
+        margin: 18vh 25vw 5vh 20vw;
+        font-weight: unset;
+    }
+    header > div > img{
+        display: block;
     }
     header > div:nth-child(1){
         width: 60%;
@@ -277,19 +284,77 @@ div span{
         display: flex;
         width: 40%;
     }
+    header > div > p{
+        margin: 0 10vw;
+        padding: 0;
+    }
     main{
         flex-direction: row;
-    }
-    main > div > p{
-        font-size: 12pt;
-    }
-    main > div > h1{
-        font-size: 14pt;
     }
     main > div{
         margin-bottom: 30px;
     }
-    section > iframe{
-        height: 50vh;
+    main > div > h1{
+        font-size: 14pt;
+    }
+    main > div > p{
+        font-size: 12pt;
+    }
+    section div img{
+        height: 37vh;
+        width: 70%;
+    }
+}
+@media(min-width: 1024px){
+    aside p{
+        margin:40px 50px 0 10vw;
+    }
+    aside ul{
+        padding: 0 10vw;
+        width: 80%;
+    }
+    header h1{
+        margin-bottom: 
+    }
+    header > div > p{
+        margin: 0 5vw 0 20vw;
+    }
+    header > div > div{
+        margin-left: 19.5vw;
+    }
+    header div:nth-child(2) img{
+        height: 400px;
+    }
+    section{
+        flex-direction: row-reverse;
+        margin: 0;
+        padding: 5vh 0;
+    }
+    section div div{
+        margin-left: 5vw;
+    }
+    section div div input{
+        width: 30vw;
+    }
+    section div div input[type="button"]{
+        width: 10vw;
+    }
+    section div:first-child{
+        width: 50%;
+    }
+    section div h1{
+        margin-left: 5vw;
+    }
+    section div img{
+        height: 38vh;
+    }
+    section div:nth-child(2){
+        align-items: flex-start;
+        width: 50%;
+    }
+}
+@media(min-width: 1440px){
+    section div img{
+        height: 40vh;
     }
 }
